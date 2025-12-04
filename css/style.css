@@ -1,0 +1,336 @@
+/* === RESET BASE === */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Public Sans', sans-serif;
+    font-size: 18px;
+    color: #333333;
+    background-color: #ffffff;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+/* === HEADER === */
+.header {
+    background-color: #FFFFFF;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+  margin-left: -10px;  
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #333333;
+    font-weight: 500;
+}
+
+
+/* === TITOLO === */
+.hero {
+    background-color: #CACACA;
+    height: 654px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 1.2;
+    margin-bottom: 24px;
+}
+
+.hero-content p {
+    font-size: 24px;
+}
+
+/* === FORMAZIONE (IMMAGINE + DESCRIZIONE) === */
+.education {
+    display: flex;
+    background-color: #F5F5F5;
+    height: 497px;
+    justify-content: center;
+}
+
+.education .container {
+    padding-left: 0;
+    padding-right: 40px; 
+}
+
+.education-image img {
+    width: 710px;
+    height: 497px;
+    object-fit: cover;
+    display: block;
+    flex: 0 0 710px;
+}
+
+.education-text {
+    flex: 1;
+    margin: 40px 100px 40px 150px;
+    line-height: 1.2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.education-text h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.education-text p {
+    margin-bottom: 16px;
+    font-weight: 400;
+}
+
+/* === SEZIONE IN CORSO  === */
+.in-progress {
+    background-color: #F5F5F5;
+    height: 497px;
+    display: flex;
+    align-items: center;
+}
+
+.in-progress-inner {
+    max-width: 1440px;
+    padding: 0 80px;
+}
+
+/*area a sinistra:testo*/
+.in-progress-left {
+    flex: 1;
+    max-width: 800px;
+    padding-right: 40px;
+    display: flex;
+    margin: 40px 100px 40px 150px;
+    line-height: 1.2;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.in-progress-left h4 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    margin-left: -80px;
+}
+
+.in-progress-left p {
+    margin-bottom: 16px;
+    margin-left: -80px;
+    color: #333333;
+    max-width: 520px;
+}
+
+.in-progress-left .projects-link {
+    display: inline-block;
+    margin-top: 15px;
+    margin-left: -80px;
+    color: #f56a65; 
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* area destra: immagine */
+.in-progress-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 80px;
+    padding-right: 0px;
+    margin-top: 100px;
+}
+
+
+/* === PROGETTI === */
+/*rettangolo di sfondo*/
+.projects-gallery {
+    background-color: #F5F5F5;
+    height: 530px;
+    display: flex;
+    align-items: center;
+}
+
+/*contenitore interno*/
+.gallery-inner {
+    max-width: 1440px;
+    padding: 40px 40px;
+    margin: 0 auto;
+}
+/*disposizione riga progetti*/
+.project-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+/*contenitore immagine+testo*/
+.project-card {
+    width: 440px;
+    margin-top: 80px;
+}
+
+/* riquadri immagine */
+.project-card img {
+    width: 100%;
+    height: 310px;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 12px;
+}
+
+/*descrizione progetti*/
+.project-caption p {
+    margin-top: 30px;
+    color: #333333;
+}
+
+/* =====================
+   SEZIONE AMBIENTE
+   ===================== */
+.environment {
+    background-color: #CACACA;
+    height: 1195px;
+    width: 100%;
+    display: flex;
+    margin-top: 80px;
+    justify-content: center;
+}
+
+.environment-inner {
+    width: 1440px;
+    padding-top: 80px;
+}
+
+.env-title {
+    font-size: 28px;
+    font-weight: 600;
+    color: #333333;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.env-subtitle {
+    font-size: 16px;
+    color: #333333;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.env-landscape {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    display: block;
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+
+.env-text {
+    font-size: 14px;
+    color: #333333;
+    text-align: left;
+    width: 650px;
+    margin: 0 40px;
+    line-height: 1.45;
+}
+
+/* =====================
+   FOTO MACCHINA
+   ===================== */
+.photo-section {
+    width: 100%;
+    height: 806px;
+    position: relative;
+}
+
+.photo-full {
+    width: 100%;
+    height: 806px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Testo sopra immagine */
+.photo-overlay-text {
+    position: absolute;
+    top: 120px;
+    left: 120px;
+    color: #333333;
+}
+
+.photo-overlay-text h3 {
+    font-size: 40px;
+    line-height: 1.1;
+    margin-bottom: 16px;
+    font-weight: 700;
+}
+
+.photo-link {
+    font-size: 14px;
+    text-decoration: none;
+    color: #333333;
+}
+
+/* =====================
+   FOOTER FINALE
+   ===================== */
+.final-footer {
+    width: 100%;
+    background-color: #FFFFFF;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-inner {
+    text-align: center;
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 14px;
+}
+
+.footer-icon {
+    width: 38px;
+    height: 38px;
+}
+
+.footer-copy {
+    font-size: 13px;
+    color: #333333;
+}
+
