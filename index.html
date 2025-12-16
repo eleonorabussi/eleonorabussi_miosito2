@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eleonora Bussi - Profilo Accademico</title>
+    <title>Eleonora Bussi - portfolio</title>
+    <link rel="icon" href="img/favicon.png" type="image/png">
     <link rel="stylesheet" href="css/bootstrap-grid.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -11,166 +12,259 @@
 
     <!-- HEADER -->
     <header class="header">
-        <div class="container header-content">
-            <div class="logo">
-                <img src="img/logo.png" alt="Logo Eleonora Bussi">
+        <div class="container">
+            <div class="header-inner">
+                <div class="logo">
+                    <img src="img/logo.png" alt="Logo Eleonora Bussi">
+                </div>
+                <button class="hamburger" id="hamburger" aria-label="Apri menu">☰</button>
+                <nav class="nav-desktop">
+                    <ul>
+                        <li><a href="#education">Formazione</a></li>
+                        <li><a href="#projects">Progetti</a></li>
+                        <li><a href="#environment">Fotografia</a></li>
+                        <li><a href="#footer">Contatti</a></li>
+                    </ul>
+                </nav>
             </div>
-            <nav class="nav">
-                <ul>
-                    <li><a href="#">Formazione</a></li>
-                    <li><a href="#">Progetti</a></li>
-                    <li><a href="#">About me</a></li>
-                    <li><a href="#">Contatti</a></li>
-                </ul>
-            </nav>
         </div>
     </header>
 
-    <!-- SEZIONE TITOLO -->
+    <!-- MENU MOBILE -->
+    <nav class="nav-mobile" id="navMobile">
+        <button class="close-menu" id="closeMenu" aria-label="Chiudi menu">×</button>
+        <ul>
+            <li><a href="#education">Formazione</a></li>
+            <li><a href="#projects">Progetti</a></li>
+            <li><a href="#environment">Fotografia</a></li>
+            <li><a href="#footer">Contatti</a></li>
+        </ul>
+    </nav>
+
+    <!-- HERO -->
     <section class="hero">
-        <div class="hero-content">
-            <h1>Eleonora Bussi -<br>Profilo Accademico</h1>
-            <p>Osservazione — Equilibrio — Comunicazione</p>
+        <div class="container">
+            <div class="hero-content">
+                <h1>Eleonora Bussi<br>portfolio</h1>
+                <p>Osservazione — Equilibrio — Comunicazione</p>
+            </div>
         </div>
     </section>
 
-    <!-- SEZIONE DESCRIZIONE + IMMAGINE -->
-
-<section class="education">
-    <div class="education-image">
-        <img src="img/foto_designer.JPG" alt="Eleonora Bussi">
-    </div>
-    <div class="container education-text">
-        <h3>Formazione e visione del design</h3>
-        <p>
-            La mia formazione ha avuto inizio presso il <strong>Liceo Linguistico Ilaria Alpi</strong> di Cesena (2019-2024),
-            dove ho sviluppato <strong>competenze comunicative</strong> e una <strong>sensibilità culturale</strong> che considero fondamentali
-            nell’approccio al design.
-            <br>
-            Poiché si tratta di una disciplina di respiro internazionale, ritengo che la conoscenza di lingue
-            e culture differenti rappresenti un elemento essenziale per tradurre concetti complessi in messaggi
-            chiari e intuitivi.
-        </p>
-    </div>
-</section>
-<!-- SEZIONE "IN CORSO" -->
-<section class="in-progress">
-    <div class="in-progress-inner">
-        <div class="row">
-            <div class="col-md-6 in-progress-left">
-                <h4>In corso</h4>
+    <!-- FORMAZIONE -->
+    <section class="education" id="education">
+        <div class="education-grid">
+            <div class="education-image">
+                <img src="img/foto_designer.JPG" alt="Eleonora Bussi">
+            </div>
+            <div class="education-text">
+                <h3>Formazione e visione del design</h3>
                 <p>
-                    A settembre 2024 ho iniziato il mio percorso presso <strong>l'Università degli Studi della Repubblica di San
-                    Marino</strong>, dove frequento il secondo anno del <strong>corso triennale di Design</strong>.
-                    Mi concentro su temi legati alla <strong>progettazione dello spazio</strong>, alla <strong>comunicazione visiva</strong> e al <strong>prodotto</strong>,
-                    prestando particolare attenzione ai processi di ricerca e alle metodologie di rappresentazione.
-                    Attraverso laboratori ed esercitazioni, esploro diverse forme espressive: dal disegno al modello, dalla grafica alla composizione tridimensionale.
+                    La mia formazione ha avuto inizio presso il <strong>Liceo Linguistico Ilaria Alpi</strong> di Cesena (2019-2024),
+                    dove ho sviluppato <strong>competenze comunicative</strong> e una <strong>sensibilità culturale</strong> che considero fondamentali
+                    nell'approccio al design.
+                    <br><br>
+                    Poiché si tratta di una disciplina di respiro internazionale, ritengo che la conoscenza di lingue
+                    e culture differenti rappresenti un elemento essenziale per tradurre concetti complessi in messaggi
+                    chiari e intuitivi.
                 </p>
-                <a class="projects-link" href="#">› Lavori e progetti</a>
-            </div>
-
-            <div class="col-md-6 in-progress-right">
-                
-                <img src="img/foto_2_formazione.png" alt="In corso - visuale" class="formazionew" />
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- SEZIONE GALLERIA PROGETTI -->
-<section class="projects-gallery">
-    <div class="container gallery-inner">
-        <div class="project-row">
-            <div class="project-card">
-                <img src="img/progetto_geometria.png" alt="Speira — Corso di Geometria">
-                <div class="project-caption">
-                    <p><strong><em>Speira — Corso di Geometria, I anno</em></strong></p>
-                    <p>Spirale modulare composta da cilindri in forex su fil di ferro, 
-                        capace di cambiare forma a seconda della posizione: sospesa risulta dinamica, 
-                        appoggiata si compatta in una struttura stabile.</p>
+    <!-- IN CORSO -->
+    <section class="in-progress">
+        <div class="container-fluid">
+            <div class="in-progress-grid">
+                <div class="in-progress-text">
+                    <h4>In corso</h4>
+                    <p>
+                        A settembre 2024 ho iniziato il mio percorso presso <strong>l'Università degli Studi della Repubblica di San
+                        Marino</strong>, dove frequento il secondo anno del <strong>corso triennale di Design</strong>.
+                        Mi concentro su temi legati alla <strong>progettazione dello spazio</strong>, alla <strong>comunicazione visiva</strong> e al <strong>prodotto</strong>,
+                        prestando particolare attenzione ai processi di ricerca e alle metodologie di rappresentazione.
+                        Attraverso laboratori ed esercitazioni, esploro diverse forme espressive: dal disegno al modello, dalla grafica alla composizione tridimensionale.
+                    </p>
                 </div>
-            </div>
-
-            <div class="project-card">
-                <img src="img/progetto_prodotto.png" alt="Hat–Bag — Corso di Design del Prodotto">
-                <div class="project-caption">
-                    <p><strong><em>Hat–Bag — Corso di Design del Prodotto, I anno</em></strong></p>
-                    <p>Accessorio ibrido in feltro che unisce cappello e borsa. 
-                        Dotato di chiusura interna e catenella, reinterpreta in chiave sperimentale la relazione tra funzione e forma.</p>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <img src="img/progetto_comunicazione.png" alt="NuovAstoria — Corso di Comunicazione">
-                <div class="project-caption">
-                    <p><strong> <em>NuovAstoria — Corso di Comunicazione, I anno</em></strong> </p>
-                    <p>Progetto di identità visiva volto a dare nuova vita all’ex Cinema Astoria di Rimini, 
-                        reinterpretandone l’immagine attraverso un linguaggio grafico contemporaneo.</p>
+                <div class="in-progress-image">
+                    <img src="img/foto_2_formazione.png" alt="In corso - visuale" />
                 </div>
             </div>
         </div>
-    </div>
-</section>
-<!-- ======================
-     SEZIONE AMBIENTE + FOTO
-     ====================== -->
-<section class="environment">
+    </section>
 
-    <div class="environment-inner">
+    <!-- PROGETTI -->
+    <section class="projects-gallery" id="projects">
+        <div class="container">
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="img/progetto_geometria.png" alt="Speira — Corso di Geometria">
+                    <div class="project-caption">
+                        <p><strong><em>Speira — Corso di Geometria, I anno</em></strong></p>
+                        <p>Spirale modulare composta da cilindri in forex su fil di ferro, 
+                            capace di cambiare forma a seconda della posizione: sospesa risulta dinamica, 
+                            appoggiata si compatta in una struttura stabile.</p>
+                    </div>
+                </div>
 
-        <h2 class="env-title">“L’ambiente come ispirazione”</h2>
+                <div class="project-card">
+                    <img src="img/progetto_prodotto.png" alt="Hat–Bag — Corso di Design del Prodotto">
+                    <div class="project-caption">
+                        <p><strong><em>Hat–Bag — Corso di Design del Prodotto, I anno</em></strong></p>
+                        <p>Accessorio ibrido in feltro che unisce cappello e borsa. 
+                            Dotato di chiusura interna e catenella, reinterpreta in chiave sperimentale la relazione tra funzione e forma.</p>
+                    </div>
+                </div>
 
-        <p class="env-subtitle">
-            Sono nata e cresciuta a <strong>Capannaguzzo</strong>, un piccolo paese della campagna<br>
-            romagnola in provincia di Cesena...
-        </p>
+                <div class="project-card">
+                    <img src="img/progetto_comunicazione.png" alt="NuovAstoria — Corso di Comunicazione">
+                    <div class="project-caption">
+                        <p><strong><em>NuovAstoria — Corso di Comunicazione, I anno</em></strong></p>
+                        <p>Progetto di identità visiva volto a dare nuova vita all'ex Cinema Astoria di Rimini, 
+                            reinterpretandone l'immagine attraverso un linguaggio grafico contemporaneo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <!-- Immagine paesaggio -->
+    <!-- AMBIENTE -->
+    <section class="environment" id="environment">
+        <div class="container">
+            <h2 class="env-title">Fotografia e visione del mondo</h2>
+            <p class="env-subtitle">
+                Sono nata e cresciuta a <strong>Capannaguzzo</strong>, un piccolo paese della campagna romagnola in provincia di Cesena...
+            </p>
+        </div>
         <img src="img/paesaggio.jpg" alt="Paesaggio" class="env-landscape">
-
-        <!-- Testo descrizione -->
-        <p class="env-text">
-            Crescere in un ambiente rurale mi ha insegnato il valore<br>
-            dell’osservazione e della semplicità: i ritmi lenti, le geometrie dei<br>
-            campi, la luce che cambia con le stagioni.<br><br>
-            Nei luoghi aperti della campagna si respira una libertà di<br>
-            movimento e di pensiero che non si trova in città, favorendo<br>
-            attenzione, riflessione e misura nella pratica progettuale.
-        </p>
-
-    </div>
-
-</section>
-
-<!-- ======================
-     FOTO MACCHINA FOTOGRAFICA
-     ====================== -->
-<section class="photo-section">
-
-    <div class="photo-overlay-text">
-        <h3>Il mondo<br>attraverso<br>l’obiettivo</h3>
-        <a class="photo-link" href="#">› Book fotografico</a>
-    </div>
-
-    <img src="img/fotografia.jpg" alt="Macchina fotografica" class="photo-full">
-</section>
-
-<!-- ======================
-     FOOTER FINALE
-     ====================== -->
-<footer class="final-footer">
-    <div class="footer-inner">
-
-        <div class="footer-icons">
-            <img src="img/email.jpg" class="footer-icon" alt="Email">
-            <img src="img/instagram.jpg" class="footer-icon" alt="Instagram">
+        <div class="container">
+            <div class="env-text-container">
+                <p class="env-text">
+                    Crescere in un ambiente rurale mi ha insegnato il valore dell'osservazione e della semplicità: i ritmi lenti, le geometrie dei campi, la luce che cambia con le stagioni.<br><br>
+                    Nei luoghi aperti della campagna si respira una libertà di movimento e di pensiero che non si trova in città, favorendo attenzione, riflessione e misura nella pratica progettuale.
+                </p>
+            </div>
         </div>
+    </section>
 
-        <p class="footer-copy">© 2024 — Privacy — Cookies</p>
+    <!-- CAROUSEL -->
+    <section class="photo-section">
+        <div class="carousel">
+            <button class="carousel-arrow left" aria-label="Previous slide">‹</button>
 
-    </div>
-</footer>
+            <div class="carousel-track">
+                <div class="slide active">
+                    <img src="img/fotografia.jpg" alt="Macchina fotografica">
+                    <div class="photo-overlay-text">
+                        <h3>Scatti<br>Racconti<br>Dettagli</h3>
+                    </div>
+                </div>
 
+                <div class="slide black-slide">
+                    <div class="black-content">
+                        <h3>La mia fotografia</h3>
+                        <p>Amo fotografare per custodire ricordi. 
+                            Fotografo quando riconosco il bello intorno a me, 
+                            nei dettagli e nelle persone, ma anche per dare voce ad aspetti nascosti, 
+                            che si celano dietro l'apparenza.</p>
+                        <a href="https://drive.google.com/drive/folders/15Sx8aQ18FRRB7VG-HZFxdDux3VJ6Ttbw?usp=sharing" target="_blank" class="black-link">Galleria di scatti →</a>
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-arrow right" aria-label="Next slide">›</button>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="final-footer" id="footer">
+        <div class="container">
+            <div class="footer-icons">
+                <div class="footer-icon-wrapper">
+                    <img src="img/email.jpg" class="footer-icon" alt="Email" id="emailIcon">
+                    <div class="email-popup" id="emailPopup">
+                        eleonorabussi17@gmail.com
+                    </div>
+                </div>
+                <a href="https://www.instagram.com/elesphotos_/" target="_blank" class="footer-icon-link">
+                    <img src="img/instagram.jpg" class="footer-icon" alt="Instagram">
+                </a>
+            </div>
+            <p class="footer-copy">© 2024 — Privacy — Cookies</p>
+        </div>
+    </footer>
+
+    <script>
+    // Menu mobile
+    const hamburger = document.getElementById('hamburger');
+    const navMobile = document.getElementById('navMobile');
+    const closeMenu = document.getElementById('closeMenu');
+    const navLinks = navMobile.querySelectorAll('a');
+
+    hamburger.addEventListener('click', () => {
+        navMobile.classList.add('active');
+    });
+
+    closeMenu.addEventListener('click', () => {
+        navMobile.classList.remove('active');
+    });
+
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            navMobile.classList.remove('active');
+        });
+    });
+
+    // Carosello
+    const track = document.querySelector('.carousel-track');
+    const slides = Array.from(track.querySelectorAll('.slide'));
+    const prev = document.querySelector('.carousel-arrow.left');
+    const next = document.querySelector('.carousel-arrow.right');
+    let index = 0;
+
+    function update() {
+        track.style.transform = `translateX(-${index * 100}%)`;
+        slides.forEach((s,i)=> s.classList.toggle('active', i===index));
+        prev.classList.toggle('hidden', index === 0);
+        next.classList.toggle('hidden', index === slides.length - 1);
+    }
+
+    prev.addEventListener('click', ()=>{
+        if(index > 0) {
+            index = index - 1;
+            update();
+        }
+    });
+
+    next.addEventListener('click', ()=>{
+        if(index < slides.length - 1) {
+            index = index + 1;
+            update();
+        }
+    });
+
+    document.addEventListener('keydown', (e)=>{
+        if(e.key === 'ArrowRight') next.click();
+        if(e.key === 'ArrowLeft') prev.click();
+    });
+
+    update();
+
+    // Email popup
+    const emailIcon = document.getElementById('emailIcon');
+    const emailPopup = document.getElementById('emailPopup');
+
+    emailIcon.addEventListener('click', () => {
+        emailPopup.classList.toggle('active');
+    });
+
+    // Chiudi popup quando clicchi fuori
+    document.addEventListener('click', (e) => {
+        if (!emailIcon.contains(e.target) && !emailPopup.contains(e.target)) {
+            emailPopup.classList.remove('active');
+        }
+    });
+    </script>
 
 </body>
 </html>
