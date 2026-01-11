@@ -624,18 +624,19 @@ img {
     font-weight: 600;
 }
 
+/* === CAROUSEL ARROWS - METTI QUESTO ALLA FINE DEL CSS === */
 .carousel-arrow {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     background: rgba(255,255,255,0.95);
     border: none;
-    width: 44px;
-    height: 44px;
+    width: 34px;
+    height: 34px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 22px;
+    font-size: 16px;
     cursor: pointer;
     z-index: 5;
     box-shadow: 0 2px 6px rgba(0,0,0,0.15);
@@ -644,17 +645,33 @@ img {
 }
 
 .carousel-arrow.left { 
-    left: 10px; 
+    left: 6px;
 }
 
 .carousel-arrow.right { 
-    right: 10px; 
+    right: 6px;
 }
 
 .carousel-arrow.hidden {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
+}
+
+@media (min-width: 768px) {
+    .carousel-arrow {
+        width: 56px;
+        height: 56px;
+        font-size: 26px;
+    }
+
+    .carousel-arrow.left {
+        left: 20px;
+    }
+
+    .carousel-arrow.right {
+        right: 20px;
+    }
 }
 
 @media (min-width: 768px) {
@@ -682,20 +699,6 @@ img {
 
     .black-content p {
         font-size: 18px;
-    }
-
-    .carousel-arrow {
-        width: 56px;
-        height: 56px;
-        font-size: 26px;
-    }
-
-    .carousel-arrow.left {
-        left: 20px;
-    }
-
-    .carousel-arrow.right {
-        right: 20px;
     }
 }
 
